@@ -1,0 +1,42 @@
+1. Request Response Method
+  - GET 
+  - POST 
+  - PUT 
+  - PATCH 
+  - DELETE 
+
+2. Response Type 
+  - JSON
+    - int 
+    - float 
+    - String 
+    - array 
+    - bool  
+    - Datetime 
+    - Object
+
+3. Postman 
+ - Upper Part 
+  - Request Handler
+ - Lower Part
+  - Response Handler 
+
+4. Response Part 
+  - Body (JSON , XML , Html , text , Base64 , Raw)
+  - Status Code (200-ok , 401-unauth , 400-badreq , 404-ntfound , 500-ServerError , 429-ManyReq , 419-ReqForbidden)
+  - Time in (ms)
+  - Initial Time (3-10 ms) , fastapi(2-7ms)
+  - Response Size
+  - Response Header [res.header("header01", "value01")]
+  - Response Cookie
+
+5. Request Part 
+  - Method(GET , POST , PUT , PATCH , DELETE)
+  - URL 
+  - Params(Parameter) 
+    -(/{name}/{age})
+    - (Query String ? name=Denesh)       http://localhost:3000/api/demo2?name=Denesh Barua Pantho&age=25
+    - Header
+    - Request body JSON
+    - Request body Form
+    - Request Authentication (Bearer Token / JWT)

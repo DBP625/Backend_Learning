@@ -1,0 +1,14 @@
+Tools
+ 1.Vscode Mongodb Extension
+ 2. Database Server 
+    -> Mongodb Download
+    -> Mongodb Atlas 
+                
+Start Coding
+    1. Connection Set 
+    2. JS Like (MQL) 
+    3. File Create Filename.mongodb.js 
+    4. Create a new Database 
+
+Query Writing
+    1.Insert Query
