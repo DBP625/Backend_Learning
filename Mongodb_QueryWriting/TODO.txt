@@ -12,3 +12,8 @@ Start Coding
 
 Query Writing
     1.Insert Query
+
+
+Model 
+    -Mongodb Structure Definition
+
