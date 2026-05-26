@@ -1,5 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
+import connectDB from "./app/config/db.js";
+
 import router from "./routes/api.js";
 import ratelimit from "express-rate-limit";
 import heltmet from "helmet";
@@ -70,16 +72,19 @@ app.use(limiter);
 app.set("etag", WEB_CACHE); //default cache is set to false
 
 //Database Connection
-mongoose
-  .connect(Mongoose_Connection, { autoIndex: true })
-  .then(() => console.log("DB Connection Success"))
-  .catch((err) => console.log("Database Connection Error:", err.message));
+// mongoose
+//   .connect(Mongoose_Connection, { autoIndex: true })
+//   .then(() => console.log("DB Connection Success"))
+//   .catch((err) => console.log("Database Connection Error:", err.message));
 
-const __rootDir = path.dirname(fileURLToPath(import.meta.url));
-app.use(
-  "/storage-files",
-  express.static(path.join(__rootDir, IMAGE_UPLOAD_PATH)),
-);
+// const __rootDir = path.dirname(fileURLToPath(import.meta.url));
+// app.use(
+//   "/storage-files",
+//   express.static(path.join(__rootDir, IMAGE_UPLOAD_PATH)),
+// );
+
+//Database Connection
+connectDB();
 
 // Routes
 

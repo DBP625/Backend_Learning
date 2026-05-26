@@ -1,6 +1,5 @@
-import { Mongoose_Connection } from "./config";
-
-const mongoose = require("mongoose");
+import { Mongoose_Connection } from "./config.js";
+import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
@@ -10,3 +9,5 @@ const connectDB = async () => {
     console.log("Mongo Vaia failed", error);
   }
 };
+
+export default connectDB;
