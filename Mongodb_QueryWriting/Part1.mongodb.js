@@ -1,4 +1,4 @@
-use("mongo-practice");
+//use("mongo-practice");
 
 //Database Creation
 // db.createCollection("users")
@@ -134,10 +134,14 @@ db.employees.updateOne(
 //   }
 // ])
 
-db.employees.aggregate([
-  {
-    $match: {
-      salary: { $gte: 50000 },
-    },
-  },
-]);
+// db.employees.aggregate([
+//   {
+//     $match: {
+//       salary: { $gte: 50000 },
+//     },
+//   },
+// ]);
+
+
+// use('task-manager')
+// db.createCollection('users')
